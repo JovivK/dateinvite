@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Invite</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <audio id="myAudio" controls autoplay>
+    <source src="song/takemybreathaway.mp3" type="audio/mp3">
+  </audio>
+  <!-- <audio id="myAudio" src="song/takemybreathaway.mp3" type="audio/mp3"></audio> -->
+  <script>
+    function askConfirmation() {
+      var confirmation = confirm("Deseja continuar? Você está correndo o alto risco de se apaixonar");
+      if (confirmation) {
+        alert("Vai ter que dar play na musica pq o Chrome/Edge bloqueia audio automático 😭 KKKKKKKKKKKK");
+        var audio = document.getElementById("myAudio");
+        audio.play();    
+      }
+    } 
+  askConfirmation();
+  </script>
+  
+  <div class="container">
+    <div class="image-container">
+      <img  src="images/emoji_rose_teeth.png" alt="Imagem Surpresa" id="imagemSurpresa" class="hidden">
+    </div>
+    <div id="texto" class="hidden">Olá, Gatinha</div>
+    <div id="texto" class="hidden">Tudo bem?</div>
+    <div id="texto" class="hidden">Você está convidada</div>
+    <div id="texto" class="hidden">Para um piquenique</div>
+    <div id="texto" class="hidden">Domingo - 03 de Março</div>
+    <div id="texto" class="hidden">As 17:00</div>
+    <div id="texto" class="hidden">No Parque do Povo</div>
+    <div id="texto1" class="hidden">Eu e você</div>
+    <div class="image-container">
+        <img src="images/cat-jumping.gif" alt="Imagem Gatinho" id="images" class="hidden">
+        <img src="images/baby-dancing.gif" alt="Imagem Gatinho" id="images" class="hidden">
+        <img src="images/dancing-skeleton.gif" alt="Imagem Gatinho" id="images" class="hidden">
+    </div>
+    <div>
+      <div id="texto" class="hidden">Bora?</div>
+      <div class='buttons'>
+        <button>Sim</button>
+        <button>Não</button>
+      </div>
+    </div>
+</div>
+</div>
+  <script src="scripts/script.js">
+    
+  </script>
+  
+</body>
+</html>
